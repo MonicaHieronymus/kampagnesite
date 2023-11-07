@@ -1,6 +1,6 @@
 ---
 import "../css/style.css";
-const {header , text} = Astro.props;
+const {header , text, picture} = Astro.props;
 
 ---
 
@@ -10,5 +10,16 @@ const {header , text} = Astro.props;
         <p>{text}</p>
         <button></button>
     </div>
-    <img src="#" alt="indsæt content her">
+    <img src="#"{picture} alt="indsæt content her">
 </div>
+
+<style>
+    .grid{
+      
+  display: grid;
+  grid-template-columns: 1fr 1f;
+
+        
+        
+    }
+</style>
