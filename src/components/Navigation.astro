@@ -1,16 +1,20 @@
 ---
 import "../css/style.css";
 import BurgerMenu from "./BurgerMenu.astro";
+import BurgerDropDown from "./BurgerDropDown.astro";
+import SearchBar from "./SearchBar.astro";
 ---
 
 <nav>
-  <a class="nav_link" href="/program">PROGRAM</a>
-  <a class="nav_link" href="/past">TIDLIGERE FESTIVALER</a>
-  <a class="nav_link" href="/about_us">OM OS</a>
+  <button class="eng">EN</button>
+  <a class="login" href="/"><img src="../../public/SVG/login.svg" /></a>
+  <a class="search" href="/"><img src="../../public/SVG/search.svg" /></a>
+  <SearchBar />
 </nav>
 
 <article>
   <BurgerMenu />
+  <BurgerDropDown />
 </article>
 
 <style>

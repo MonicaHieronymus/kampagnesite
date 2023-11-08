@@ -3,6 +3,8 @@ import "../css/style.css";
 const { title } = Astro.props;
 import Header from "../components/Header.astro";
 import BurgerDropDown from "../components/BurgerDropDown.astro";
+import BurgerMenu from "../components/BurgerMenu.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
@@ -10,12 +12,14 @@ import BurgerDropDown from "../components/BurgerDropDown.astro";
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/CPH_LF_Logo.svg" />
     <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
     <header>
       <Header />
+      <BurgerMenu />
       <BurgerDropDown />
     </header>
     <main>
