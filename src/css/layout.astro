@@ -1,0 +1,25 @@
+---
+import "../css/style.css";
+const { title } = Astro.props;
+import Header from "../components/Header.astro";
+import BurgerDropDown from "../components/BurgerDropDown.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/CPH_LF_Logo.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <Header />
+      <BurgerDropDown />
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

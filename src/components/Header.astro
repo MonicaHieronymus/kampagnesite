@@ -1,0 +1,30 @@
+---
+import "../css/style.css";
+import Nav from "./BurgerMenu.astro";
+---
+
+<article>
+  <a href="/"> <img src="../../clf_logo.webp" alt="Copenhagen light festival logo" /></a>
+  <Nav />
+</article>
+
+<style>
+  article {
+    display: flex;
+    background-color: #181818;
+    padding: 10px;
+    justify-content: space-evenly;
+    gap: 40%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  img {
+    max-height: 50px;
+  }
+
+  @media screen and (max-width: 800px) {
+  }
+</style>

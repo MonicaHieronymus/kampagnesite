@@ -26,6 +26,17 @@ img {
   src: url(../../public/nexa_font/Nexa\ Bold.ttf);
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Nexa";
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 button {
   background-color: #054673;
   border: none;
@@ -35,4 +46,36 @@ button {
   display: inline-block;
   padding: 15px 32px;
   border-radius: 10px;
+}
+
+button:hover {
+  color: grey;
+}
+
+.whyCA {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 2rem 0;
+  font-size: 30px;
+}
+
+@media (min-width: 600px) {
+  .grid_1_1_1_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .grid_1_1_1_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
