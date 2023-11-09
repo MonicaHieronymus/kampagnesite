@@ -5,12 +5,12 @@ import "../css/style.css";
 
 <Layout />
 <div class="container">
-  <form action="https://www.google.com/search" class="search" id="search-bar">
-    <input type="search" placeholder="Type something..." name="q" class="search__input" />
+  <form action="search" class="search" id="search-bar">
+    <input type="search" placeholder="Hvad leder du efter?" name="q" class="search__input" />
 
     <div class="search__button" id="search-button">
-      <i class="ri-search-2-line search__icon"></i>
-      <i class="ri-close-line search__close"></i>
+      <img src="../../public/SVG/search-line.svg" alt="search line" />
+      <img src="../../public/SVG/close-line.svg" alt="close line" />
     </div>
   </form>
 </div>
@@ -48,9 +48,9 @@ import "../css/style.css";
     pointer-events: none;
     transition: opacity 1.5s;
   }
-  .search__input:-webkit-autofill {
+  /* .search__input:-webkit-autofill {
     box-shadow: 0 0 0 100px var(--white-color) inset;
-  }
+  } */
   .search__button {
     width: 56px;
     height: 56px;

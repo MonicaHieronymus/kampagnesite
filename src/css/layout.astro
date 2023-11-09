@@ -12,7 +12,7 @@ import Navigation from "../components/Navigation.astro";
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/CPH_LF_Logo.svg" />
     <meta name="viewport" content="width=device-width" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" /> -->
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -21,6 +21,7 @@ import Navigation from "../components/Navigation.astro";
       <Header />
       <BurgerMenu />
       <BurgerDropDown />
+      <Navigation />
     </header>
     <main>
       <slot />
